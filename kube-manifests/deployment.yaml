@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: binance-analytics
-        image: 135725668143.dkr.ecr.ap-northeast-1.amazonaws.com/sidd-binance:0.1.1
+        image: 135725668143.dkr.ecr.ap-northeast-1.amazonaws.com/sidd-binance:0.1.2
         resources:
           limits:
             memory: "1024Mi"
