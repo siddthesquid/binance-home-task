@@ -1,0 +1,6 @@
+binance-connector==1.5.0
+Flask==2.0.1
+gunicorn==20.1.0
+prometheus-client==0.11.0
+simplejson==3.17.5
+markdown==3.3.4

@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: binance-analytics
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: binance-analytics
+  template:
+    metadata:
+      labels:
+        app: binance-analytics
+    spec:
+      containers:
+      - name: binance-analytics
+        image: 135725668143.dkr.ecr.ap-northeast-1.amazonaws.com/sidd-binance:0.1.1
+        resources:
+          limits:
+            memory: "1024Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8000
